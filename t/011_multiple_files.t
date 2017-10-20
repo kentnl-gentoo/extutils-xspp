@@ -2,7 +2,8 @@
 
 use strict;
 use warnings;
-use t::lib::XSP::Test tests => 3;
+use lib 't/lib';
+use XSP::Test tests => 3;
 
 run_diff process => 'expected';
 
