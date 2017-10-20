@@ -2,7 +2,8 @@
 
 use strict;
 use warnings;
-use t::lib::XSP::Test tests => 2;
+use lib 't/lib';
+use XSP::Test tests => 2;
 
 run_diff xsp_stdout => 'expected';
 
@@ -12,8 +13,8 @@ __DATA__
 --- xsp_stdout
 %module{Foo};
 %package{Foo};
-%loadplugin{t::lib::XSP::Plugin};
-%loadplugin{t::lib::XSP::Plugin};
+%loadplugin{XSP::Plugin};
+%loadplugin{XSP::Plugin};
 
 int foo(int y);
 

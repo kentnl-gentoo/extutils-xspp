@@ -2,7 +2,8 @@
 
 use strict;
 use warnings;
-use t::lib::XSP::Test tests => 6;
+use lib 't/lib';
+use XSP::Test tests => 6;
 
 # monkeypatch print methods to test conditionals are parsed correctly
 no warnings 'redefine';
